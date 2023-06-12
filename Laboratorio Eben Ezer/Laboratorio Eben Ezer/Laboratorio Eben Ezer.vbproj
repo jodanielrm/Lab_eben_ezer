@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{398A12DE-5BFE-4F95-9C32-4D56DFD2723F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Laboratorio_Eben_Ezer.My.MyApplication</StartupObject>
+    <RootNamespace>Laboratorio_Eben_Ezer</RootNamespace>
+    <AssemblyName>Laboratorio Eben Ezer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Laboratorio Eben Ezer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Laboratorio Eben Ezer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-1 color transparente.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="BC.NetBarcodeGeneratorTrial.Qrcode">
+      <HintPath>..\..\..\..\Downloads\Compressed\BC.NetBarcodeGeneratorTrial.Qrcode\BC.NetBarcodeGeneratorTrial.Qrcode\BC.Library\BC.NetBarcodeGeneratorTrial.Qrcode.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GENERALES\CROrina.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CROrina.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GENERALES\CRParasitologia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRParasitologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GENERALES\RptOrina.Designer.vb">
+      <DependentUpon>RptOrina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERALES\RptOrina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENERALES\RptParasitologia.Designer.vb">
+      <DependentUpon>RptParasitologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERALES\RptParasitologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes.Designer.vb">
+      <DependentUpon>Informes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INMUNOLOGIA\CRInmunologia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRInmunologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="INMUNOLOGIA\RptInmunologia.Designer.vb">
+      <DependentUpon>RptInmunologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INMUNOLOGIA\RptInmunologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\Citologia.Designer.vb">
+      <DependentUpon>Citologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\Citologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONAS\Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAS\Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="RAIZ\CRCitologia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCitologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAIZ\CRDiversos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRDiversos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAIZ\CRHemograma.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHemograma.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAIZ\CRQGeneral.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRQGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAIZ\CRSerologia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRSerologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAIZ\Diversos.Designer.vb">
+      <DependentUpon>Diversos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\Diversos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INMUNOLOGIA\Inmunologia.Designer.vb">
+      <DependentUpon>Inmunologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INMUNOLOGIA\Inmunologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdVariables.vb" />
+    <Compile Include="PERSONAS\Medicos.Designer.vb">
+      <DependentUpon>Medicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAS\Medicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GENERALES\Orina.Designer.vb">
+      <DependentUpon>Orina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERALES\Orina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENERALES\Parasitologia.Designer.vb">
+      <DependentUpon>Parasitologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERALES\Parasitologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\Hemograma.Designer.vb">
+      <DependentUpon>Hemograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\Hemograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\QuimicaGeneral.Designer.vb">
+      <DependentUpon>QuimicaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\QuimicaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\RptCitologia.Designer.vb">
+      <DependentUpon>RptCitologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\RptCitologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\RptDiversos.Designer.vb">
+      <DependentUpon>RptDiversos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\RptDiversos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\RptHemograma.Designer.vb">
+      <DependentUpon>RptHemograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\RptHemograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\RPTQGeneral.Designer.vb">
+      <DependentUpon>RPTQGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\RPTQGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\RptSerologia.Designer.vb">
+      <DependentUpon>RptSerologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\RptSerologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAIZ\Serologia.Designer.vb">
+      <DependentUpon>Serologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RAIZ\Serologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados.Designer.vb">
+      <DependentUpon>Resultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GENERALES\CROrina.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CROrina.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERALES\CRParasitologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRParasitologia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERALES\RptOrina.resx">
+      <DependentUpon>RptOrina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERALES\RptParasitologia.resx">
+      <DependentUpon>RptParasitologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes.resx">
+      <DependentUpon>Informes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INMUNOLOGIA\CRInmunologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRInmunologia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INMUNOLOGIA\RptInmunologia.resx">
+      <DependentUpon>RptInmunologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\Citologia.resx">
+      <DependentUpon>Citologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAS\Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\CRCitologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCitologia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\CRDiversos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRDiversos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\CRHemograma.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHemograma.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\CRQGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRQGeneral.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\CRSerologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSerologia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\Diversos.resx">
+      <DependentUpon>Diversos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INMUNOLOGIA\Inmunologia.resx">
+      <DependentUpon>Inmunologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAS\Medicos.resx">
+      <DependentUpon>Medicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERALES\Orina.resx">
+      <DependentUpon>Orina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERALES\Parasitologia.resx">
+      <DependentUpon>Parasitologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\Hemograma.resx">
+      <DependentUpon>Hemograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\QuimicaGeneral.resx">
+      <DependentUpon>QuimicaGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\RptCitologia.resx">
+      <DependentUpon>RptCitologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\RptDiversos.resx">
+      <DependentUpon>RptDiversos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\RptHemograma.resx">
+      <DependentUpon>RptHemograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\RPTQGeneral.resx">
+      <DependentUpon>RPTQGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\RptSerologia.resx">
+      <DependentUpon>RptSerologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAIZ\Serologia.resx">
+      <DependentUpon>Serologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados.resx">
+      <DependentUpon>Resultados.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-1 color transparente.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
